@@ -1,0 +1,107 @@
+#content { position:relative; }
+
+div.property {
+
+}
+
+div.property-header {
+	position:relative;
+	background: #99c2d8;
+	background: -moz-linear-gradient(top, #99c2d8 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99c2d8), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #99c2d8 0%,#ffffff 100%);
+	background: -o-linear-gradient(top, #99c2d8 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #99c2d8 0%,#ffffff 100%);
+	background: linear-gradient(top, #99c2d8 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99c2d8', endColorstr='#ffffff',GradientType=0 );
+	/*border-bottom:1px solid #888;*/
+}
+	div.property-header h1 {
+		padding-top:3px;
+		padding-left:5px;
+		color:#346E8E;
+		-webkit-transition: all .5s;
+		-moz-transition: all .5s;
+		ms-transition: all .5s;
+		-o-transition: all .5s;
+		transition: all .5s;
+		width:500px;
+		text-align:left;
+		border:none;
+		font-size:1.7em;
+	}
+	
+		div.property-header h1:hover {
+			color:#4B93BD;
+			/*padding-left:20px;*/
+		}
+	
+	span.property-price {
+		position:absolute;
+		top:5px; right:10px;
+		width:120px;
+		text-align:right;
+		font-size:1.5em;
+	}
+	
+	span.property-no-price {
+		position:absolute;
+		top:5px; right:10px;
+		width:120px;
+		text-align:right;
+		font-size:.9em;	
+		font-style:italic;		
+	}
+	
+div.property-gallery {
+	position:relative;
+	right:10px;
+}
+	
+div.property-description {
+	width:540px;
+	margin:0 auto;
+	text-align:justify;
+}
+
+dl.parameters-list {
+	/*margin: 0 20px;*/
+	/*margin: 0 80px 0 0;*/
+	margin:0 auto;
+	width:540px;
+	padding:0 10px;
+	
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #99c2d8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#99c2d8));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#99c2d8 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#99c2d8 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#99c2d8 100%);
+	background: linear-gradient(top, #ffffff 0%,#99c2d8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#99c2d8',GradientType=0 );	
+}
+	dl.parameters-list dt,
+	dl.parameters-list dd {
+		width:50%;
+		float:left;
+		border-top:1px dotted white;
+		padding:5px 0;
+	}
+	/* perla di CSS che non funziona SOLO su IE (ovviamente).
+		dl.parameters-list dt:not(:first-child),
+		dl.parameters-list dd:not(:nth-child(2)) {
+			border-top:1px dashed;
+		}
+	*/
+		
+	dl.parameters-list dt {
+	}
+	dl.parameters-list dd {
+		margin:0;
+	}
+
+div.property-creation-date {
+	text-align:right;
+	margin:20px auto;
+	width:560px;
+}

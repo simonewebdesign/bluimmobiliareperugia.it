@@ -1,0 +1,57 @@
+/*** CSS Template name: servizi ***/
+
+@import url('default.css');
+@import url('../classes/number-circle.css');
+
+#middle-column {
+	margin:0 auto;
+	float:none;
+	width:650px;
+	font-size:1.1em;
+	letter-spacing:1px;
+	padding:20px;
+	line-height:30px;
+	text-align:justify;
+}
+
+ul#services {
+	padding-left:0;
+	list-style:none;	
+}
+	ul#services li {
+		transition: all .5s;
+		-moz-transition: all .5s;
+		-webkit-transition: all .5s;
+		-o-transition: all .5s;		
+	}
+		ul#services li:hover {
+			margin-left:15px;
+		}
+		ul#services li span.number-circle {
+			margin-right:5px;
+			height:3px;
+		}
+	
+a#contact-us {
+	display:block;
+	text-align:center;
+	margin:10px;
+	letter-spacing:1px;
+	font-weight:bold;
+	padding:10px 0;
+}
+
+button#contact-button {
+	display:block;
+	margin:0 auto;
+	font-size:1.2em;
+	margin-top:25px;
+	margin-bottom:40px;
+}
+
+.services-separator {
+	color:#EA1919;
+}
+	.services-separator:hover {
+		color:#B30000;
+}

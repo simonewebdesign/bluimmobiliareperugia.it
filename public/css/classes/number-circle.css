@@ -1,0 +1,25 @@
+.number-circle {
+	min-width:18px;
+	height:18px;
+	display:inline-block;
+	border-radius:10px;
+	
+	text-align:center;
+	line-height:18px;
+	color:white;
+	
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+
+	background:#EA1919;
+	
+	font-size:.9em;
+}
+
+a:hover .number-circle {
+	background:#B30000;
+	padding:1px;	
+}

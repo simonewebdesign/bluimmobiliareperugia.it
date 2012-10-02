@@ -1,0 +1,20 @@
+/*** CSS Template name: dove-siamo ***/
+
+@import url('default.css');
+@import url('../modules/googleMap.css');
+@import url('../modules/contact-form.css');
+
+#middle-column {
+	box-shadow:none;
+	width:500px;
+	margin-left:50px;
+	margin-bottom:50px;
+}
+	#middle-column h1 {
+		text-align:left;
+	}
+
+#right-column {
+	margin-top:80px;
+	width:370px;
+}

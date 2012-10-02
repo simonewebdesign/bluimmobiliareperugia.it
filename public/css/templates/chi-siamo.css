@@ -1,0 +1,12 @@
+/*** Template name: chi-siamo ***/
+
+@import url('default.css');
+@import url('../classes/man.css');
+
+
+#middle-column {
+	margin:0 auto;
+	width:460px;
+	float:none;
+	padding:30px;
+}

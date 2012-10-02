@@ -1,0 +1,21 @@
+/* lists */
+ul.list {
+	list-style-type: circle; /* default is disc */
+	list-style-position:inside;
+	margin:0;
+	padding:0;
+}
+
+ul.list li {
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	
+	/*height:22px;*/
+	line-height:22px;
+}
+ul.list li:hover {
+	padding-left:4px;
+}

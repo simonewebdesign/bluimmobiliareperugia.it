@@ -1,0 +1,13 @@
+/* fushi's custom helper classes */
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.mock {
+	display:none !important;
+}

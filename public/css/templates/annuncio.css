@@ -1,0 +1,15 @@
+/*** Template name: annuncio ***/
+@import url('default.css');
+
+#middle-column {
+	width:620px;
+	box-shadow:none;
+	float:left;
+}
+
+#right-column {
+	width:340px;
+	float:right;
+	text-align:center;
+	padding-top:0;
+}
