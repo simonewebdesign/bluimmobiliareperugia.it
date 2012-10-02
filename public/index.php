@@ -101,8 +101,8 @@
       isPaused: false,
       currPage: 1
     },
-    callback: undefined,
-    debug: true,
+    //callback: undefined,
+    debug: false,
     behavior: undefined,
     binder: $(window), // used to cache the selector
     nextSelector: ".nextpage", // selector for the NEXT link (to page 2)
@@ -116,6 +116,12 @@
     bufferPx: 40,
     errorCallback: function () { },
     infid: 0, //Instance ID
+  }, 
+  function () {
+    console.log('loading lazy images');
+    $('img.lazy').lazyload({ 
+      effect : "fadeIn"
+    });
   });
   </script>
   <!-- end jQuery infinite scroll -->
