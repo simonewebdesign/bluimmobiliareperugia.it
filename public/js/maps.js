@@ -1,7 +1,6 @@
-var OLD_GOOGLE_MAPS_API_KEY = "AIzaSyAHfjHp2jauM2_1cyGZLAn8zOCXcOJg-2U";
-var GOOGLE_MAPS_API_KEY = "AIzaSyAW3aHXenhMo0psA2J7HKPW0pQH34bWvaA";
-var CLIENT = "gme-xxx";
-var VERSION = "3.9";
+var GOOGLE_MAPS_API_KEY = 'AIzaSyBYoJyMyuOAnVmeNSv_kFwqnZN1-nWjU_w';
+//var CLIENT = "gme-xxx";
+//var VERSION = "3.9";
 
 function trim(stringToTrim) {
 	return stringToTrim.replace(/^\s+|\s+$/g,"");
@@ -113,7 +112,7 @@ function rtrim(stringToTrim) {
 function loadScript() {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key="+GOOGLE_MAPS_API_KEY+"&sensor=false&libraries=places&callback=initialize&client="+CLIENT+"&v="+VERSION;
+  script.src = "http://maps.googleapis.com/maps/api/js?key="+GOOGLE_MAPS_API_KEY+"&sensor=false&libraries=places&callback=initialize"; //&client="+CLIENT+"&v="+VERSION;
   document.body.appendChild(script);
 }
 
