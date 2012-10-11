@@ -36,7 +36,6 @@ $(document).ready( function() {
 				$('#response')
 				.html( data + '<div id="response-close">x</div>' )
 				.show('slow')
-				// TODO possible enchancement: change bg of selected row
 				
 				// modifiche funzionali e grafiche true/false
 				if ( $(this).hasClass('true') || $(this).hasClass('false') ) {
