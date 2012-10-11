@@ -1,5 +1,4 @@
 <?php
-$images_query = "SELECT * FROM images WHERE property_id='{$property->_id}'";
-$images = $db->query($images_query);
-
-//var_dump($images->rowCount());
+$images_db = $db->prepare("SELECT * FROM images WHERE property_id=?");
+$images_db->execute(array($property->_id));
+$images = $images_db;

@@ -5,10 +5,12 @@ include INC . 'getPropertyLink.php';
 
 <div class="property-preview clearfix">
 	
+  <?php if ( !empty($main_image->name) ) { ?>
 	<a class="image" href="<?=$property->link?>">
 		<img class="lazy" src="<?=ROOT?>img/uploaded/preview/no-preview.jpg" data-original="<?=ROOT . PREVIEW . $main_image->name?>" alt="<?=$property->title?>">
 	</a>
-	
+	<?php } ?>
+  
 	<h4><a class="title" href="<?=$property->link?>"><?=$property->title?></a></h4>
 	
 	<div class="description">

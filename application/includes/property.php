@@ -10,9 +10,11 @@
 	<?php } ?>
 </div>
 
+<?php if ($images) { ?>
 <div class="property-gallery">
 <?php include_once 'galleria/themes/classic/gallery.php'; ?>
 </div>
+<?php } ?>
 
 <div class="property-description">
 <?=$property->description?>
