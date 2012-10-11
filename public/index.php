@@ -2,10 +2,7 @@
 <!doctype html>
 
 
-
 <?=CREDITS?>
-
-
 
 
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="it"> <![endif]-->
@@ -127,12 +124,9 @@
   <!-- end jQuery infinite scroll -->
   <?php } ?>
 
-  <?php if ( $template['name'] == 'annuncio' ) { // galleria ?>
-	<!-- Add galleria -->
+  <?php if ( $template['name'] == 'annuncio' && $images ) { // jquery galleria ?>
 	<script src="<?=ROOT?>galleria/galleria-1.2.7.min.js"></script>
-	<!-- Load galleria classic theme -->
 	<script src="<?=ROOT?>galleria/themes/classic/galleria.load.js"></script>	
-	
   <?php } ?>
 
   <?php if ( $template['name'] == 'servizi' ) { ?>
@@ -173,6 +167,5 @@ echo "<pre>";
 echo "</pre>";
 	//* END DEBUG */
   ?>
-
 </body>
 </html>
