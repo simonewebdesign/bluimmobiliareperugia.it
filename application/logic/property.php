@@ -19,4 +19,6 @@ $published_property_query = "SELECT p.*, t.`name` AS `type`, c.`name` AS `contra
 $property_db = $db->query($published_property_query);
 $property = $property_db->fetchObject();
 //var_dump($property);
-
+if (empty($property)) {
+  header('HTTP/1.1 404 Not Found');
+}

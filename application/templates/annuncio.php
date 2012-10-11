@@ -1,6 +1,6 @@
 <!-- PHP Template name: Annuncio -->
 
-<?php 
+<?php
 
 //include_once INC . 'h1h2.php';
 
@@ -12,11 +12,12 @@ $error_message = 'Spiacente, l\'annuncio richiesto non è disponibile.<br>Prova 
 if ( $property_id ) {
 
 //	include_once LOGIC . 'property.php';
-	
+
 	if ( !empty($property) ) {
 		// showing property's details...
 		?>
 <div id=middle-column role=main class=left>
+  <?php include_once LOGIC . 'images.php'; ?>
 	<?php include_once INC . 'property.php'; ?>
 	<hr>
 	<?php include_once INC . 'forms/send_message.php'; ?>
@@ -25,16 +26,16 @@ if ( $property_id ) {
 	<?php include_once INC . 'googleMap.php'; ?>
 	<hr>
 	<?php include_once INC . 'similar_properties.php'; ?>
-</div>	
+</div>
 		<?php
 		// DEBUG
 		//var_dump($property);
-		
+
 	} else {
 		// something to show/do if $property with $property_id not found in db.
 		echo "<p style='margin-left:20px;'>$error_message</p>";
 	}
-	
+
 } else {
 	// something to show if $property_id is not set in URL, =0, negative, or not valid.
 	echo "<p style='margin-left:20px;'>$error_message</p>";

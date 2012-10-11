@@ -1,5 +1,5 @@
 
-<?php // current container is <div id="content"> ?>
+<?php // current container is <div id="content">. see template annuncio ?>
 
 <div class="property-header">
 	<h1><?=$property->title?></h1>

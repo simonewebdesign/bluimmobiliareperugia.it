@@ -23,9 +23,7 @@
 
 	<?php
 	
-	include_once LOGIC . 'images.php';
-	
-	while ( $image = $images->fetchObject() ) {
+	foreach ( $images as $image ) {
 	
 		$portrait = PORTRAIT . $image->name;
 		$preview = PREVIEW . $image->name;
