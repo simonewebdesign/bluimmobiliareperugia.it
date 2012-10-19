@@ -11,7 +11,7 @@ if ( $properties->rowCount() > 0 ) {
 
 <?php while ( $property = $properties->fetchObject() ) {
 
-		include LOGIC . 'similar_image.php';
+		include LOGIC . 'main_image.php';
 		include INC . 'getPropertyTitle.php';
 		include INC . 'getPropertyLink.php';
 		include INC . 'similar_property.php';

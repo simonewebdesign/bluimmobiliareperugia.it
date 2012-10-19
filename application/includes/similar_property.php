@@ -1,10 +1,12 @@
 <div class="property-similar clearfix">
 
 	<a class="property-similar-title" href=<?=$property->link?>><?=$property->title?></a>
-	
+
+	<?php if ($main_image) { ?>
 	<a class="property-similar-image" href=<?=$property->link?>>
 		<img src="<?=ROOT . PREVIEW . $main_image->name?>" alt="<?=$property->title?>">
-	</a>	
+	</a>
+	<?php } ?>
 	
 	<div class="property-similar-description">
 		<?php
