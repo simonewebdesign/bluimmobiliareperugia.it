@@ -1,8 +1,5 @@
 <h2>Valori degli attributi</h2>
-
-<p>Prima di inserire un nuovo valore, assicurati che esista già l'attributo a cui deve essere associato.</p>
 <a class="action create" href="<?=ROOT?>backoffice/<?=$table_name?>/create">Aggiungi nuovo</a>
-
 <?php
 
 if ( isset($_POST['submit']) ) {

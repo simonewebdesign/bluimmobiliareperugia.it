@@ -1,10 +1,5 @@
 <h2>Attributi</h2>
-
-<p>Eliminando un attributo, verranno eliminati automaticamente anche tutti i valori ad esso associati.</p>
-<p>Se desideri cancellare un singolo valore, passa alla <a href="<?=ROOT?>backoffice/attributes_values">gestione dei valori</a>.
-<br><br>
 <a class="action create" href="<?=ROOT?>backoffice/<?=$table_name?>/create">Aggiungi nuovo attributo</a>
-
 <?php
 
 if ( isset($_POST['submit']) ) {

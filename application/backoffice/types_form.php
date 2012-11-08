@@ -1,5 +1,5 @@
 <?php /* form injected via AJAX */
-//* debug
+/* debug
 var_dump($template_name);
 var_dump($table_name);
 var_dump($action);
@@ -26,7 +26,7 @@ if ( $action == 'update' ) {
 
 	<fieldset>
 	
-		<!--<legend></legend>-->
+		<legend>Immobile (singolare)</legend>
 		
 		<p class=clearfix>
 			<label for=name>Nome</label>

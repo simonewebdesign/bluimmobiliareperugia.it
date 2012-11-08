@@ -1,8 +1,5 @@
 <h2>Frazioni</h2>
-
-<p>Prima di aggiungere una nuova frazione, assicurati di aver già inserito il Comune a cui appartiene.</p>
 <a class="action create" href="<?=ROOT?>backoffice/<?=$table_name?>/create">Aggiungi nuova frazione</a>
-
 <?php
 
 if ( isset($_POST['submit']) ) {
